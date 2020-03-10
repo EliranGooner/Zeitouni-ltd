@@ -93,17 +93,13 @@ a.pure-button-primary {
 .home-menu {
     padding: 0.5em;
     text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
 .home-menu {
-  background-color: transparent;
-  transition: 0.5s background-color ease;
-}
-.scrolled {
-  background: white;
+    background: #2d3e50;
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
-    padding-top: 0;
     border-bottom: none;
     /* I need a higher z-index here because of the scroll-over effect. */
     z-index: 4;
@@ -141,7 +137,7 @@ a.pure-button-primary {
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
-    height: 100vh;
+    height: 88%;
     top: 0;
     left: 0;
     position: fixed !important;
@@ -177,72 +173,6 @@ a.pure-button-primary {
     opacity: 0.8;
 }
 
-.scroll-down {
-  // position: absolute;
-  // bottom: 20px;
-  // left: 100px;
-}
-
-
-#scroll a {
-  padding-top: 80px;
-
-}
-#scroll a span {
-  color: black;
-  position: absolute;
-  top: 620px;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb07 2s infinite;
-  animation: sdb07 2s infinite;
-  opacity: 0;
-  box-sizing: border-box;
-}
-#scroll a span:nth-of-type(1) {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-#scroll a span:nth-of-type(2) {
-  top: 636px;
-  -webkit-animation-delay: .15s;
-  animation-delay: .15s;
-}
-#scroll a span:nth-of-type(3) {
-  top: 652px;
-  -webkit-animation-delay: .3s;
-  animation-delay: .3s;
-}
-@-webkit-keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sdb07 {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-
 /*
  * -- CONTENT STYLES --
  * This represents the content area (everything below the blue section)
@@ -250,9 +180,9 @@ a.pure-button-primary {
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 100%;
+    top: 87%;
     width: 100%;
-    min-height: 0%;
+    min-height: 12%;
     z-index: 2;
     background: white;
 
@@ -293,6 +223,7 @@ a.pure-button-primary {
 /* This is the class used for the footer */
 .footer {
     background: #111;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
@@ -353,4 +284,3 @@ a.pure-button-primary {
         font-size: 300%;
     }
 }
-// Specific CSS for your home-page
