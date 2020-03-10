@@ -79,6 +79,7 @@
   }
   a {
     text-decoration: none;
+    text-align: center;
     color: black !important;
     font-size: 1.4rem;
     margin-bottom: 3rem;
@@ -92,5 +93,6 @@
 }
 
 .menu a.selected{
-    border: 1px solid black;
+    padding: 5px;
+    border: 1px solid gold;
 }
