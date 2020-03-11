@@ -7,8 +7,10 @@ const menuToggler = () => {
    * and the toggler button.
    */
   toggler.addEventListener('click', () => {
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     toggler.classList.toggle('active');
     menu.classList.toggle('active');
+
   });
 };
 
